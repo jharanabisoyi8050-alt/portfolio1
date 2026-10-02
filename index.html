@@ -6,7 +6,7 @@
     <title>Jharana Bisoyi | Portfolio</title>
     <meta
       name="description"
-      content="Jharana Bisoyi is an aspiring web developer building responsive, elegant digital experiences."
+      content="Jharana Bisoyi is an aspiring data analyst focused on turning data into actionable insights."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -867,16 +867,16 @@
         <section class="hero" id="hero">
           <div class="container hero-grid">
             <div class="reveal">
-              <span class="eyebrow">✨ Aspiring Web Developer</span>
+              <span class="eyebrow">✨ Aspiring Data Analyst</span>
               <h1>
                 Jharana Bisoyi<br />
                 <span class="typing-text" id="typingText"></span>
               </h1>
               <p>
-                Learning, building, and continuously improving my coding skills to become a professional web developer.
+                Analyzing data, identifying patterns, and turning insights into smarter business decisions.
               </p>
               <div class="hero-actions">
-                <a class="button-primary" href="r.pdf" download>
+                <a class="button-primary" href="my%20res.pdf" download="my-resume.pdf">
                   <span>⬇</span> Download Resume
                 </a>
                 <a class="button-secondary" href="#contact">Contact Me</a>
@@ -899,7 +899,7 @@
                 />
               </div>
               <h3 style="text-align:center;">Jharana Bisoyi</h3>
-              <p style="text-align:center; color: var(--color-muted); margin-top:0.3rem;">ISE Student • Web Developer in the making</p>
+              <p style="text-align:center; color: var(--color-muted); margin-top:0.3rem;">ISE Student • Data Analyst in the making</p>
               <div class="mini-list">
                 <div class="mini-item">📍 Bangalore, India</div>
                 <div class="mini-item">✉ jharanabisoyi8050@gmail.com</div>
@@ -915,7 +915,7 @@
             <div class="reveal">
               <h2 class="section-title">About Me</h2>
               <p class="section-copy">
-                Aspiring Web Developer passionate about designing and building responsive, user-friendly websites. Currently pursuing B.Tech in Information Science & Engineering and continuously improving my skills in HTML, CSS, JavaScript, and modern web technologies. I enjoy learning new concepts, creating clean web interfaces, and turning ideas into functional websites.
+                Aspiring Data Analyst passionate about exploring data, uncovering meaningful insights, and supporting decision-making with evidence. Currently pursuing B.Tech in Information Science & Engineering and strengthening my skills in data analysis, SQL, Excel, Python, and business intelligence tools. I enjoy turning raw information into clear stories that help people make smarter choices.
               </p>
             </div>
             <div class="about-grid">
@@ -946,43 +946,54 @@
             <div class="reveal">
               <h2 class="section-title">Skills</h2>
               <p class="section-copy">
-                I blend technical curiosity with clear communication, aiming to build interfaces that are not only functional but memorable.
+                I use data to uncover trends, validate ideas, and communicate insights that support better decisions.
               </p>
             </div>
             <div class="skills-grid">
               <div class="skill-group reveal">
                 <h3>Technical Skills</h3>
                 <div class="progress-row">
+                  <div class="meta"><span>SQL</span><span>1%</span></div>
+                  <div class="progress-track"><div class="progress-bar" data-width="1"></div></div>
+                </div>
+                <div class="progress-row">
                   <div class="meta"><span>Python</span><span>1%</span></div>
                   <div class="progress-track"><div class="progress-bar" data-width="1"></div></div>
                 </div>
                 <div class="progress-row">
-                  <div class="meta"><span>C</span><span>1%</span></div>
+                  <div class="meta"><span>Excel</span><span>1%</span></div>
                   <div class="progress-track"><div class="progress-bar" data-width="1"></div></div>
                 </div>
                 <div class="progress-row">
-                  <div class="meta"><span>HTML / CSS / JS</span><span>1%</span></div>
+                  <div class="meta"><span>Power BI</span><span>1%</span></div>
                   <div class="progress-track"><div class="progress-bar" data-width="1"></div></div>
                 </div>
                 <div class="skills-list">
+                  <span class="chip">SQL</span>
                   <span class="chip">Python</span>
-                  <span class="chip">C</span>
-                  <span class="chip">HTML</span>
-                  <span class="chip">CSS</span>
-                  <span class="chip">JavaScript</span>
+                  <span class="chip">Excel</span>
+                  <span class="chip">Power BI</span>
+                  <span class="chip">Tableau</span>
+                  <span class="chip">Pandas</span>
+                  <span class="chip">Data Cleaning</span>
+                  <span class="chip">Data Visualization</span>
+                  <span class="chip">Statistics</span>
                 </div>
               </div>
               <div class="skill-group reveal">
                 <h3>Soft Skills</h3>
                 <div class="skills-list">
+                  <span class="chip">Analytical Thinking</span>
+                  <span class="chip">Critical Thinking</span>
                   <span class="chip">Problem Solving</span>
-                  <span class="chip">Public Speaking</span>
+                  <span class="chip">Attention to Detail</span>
+                  <span class="chip">Communication</span>
+                  <span class="chip">Decision Support</span>
                   <span class="chip">Team Collaboration</span>
-                  <span class="chip">Adaptability</span>
-                  <span class="chip">Creativity</span>
+                  <span class="chip">Time Management</span>
                 </div>
                 <p style="color: var(--color-muted); margin-top:1rem;">
-                  I enjoy learning through collaboration, presenting ideas clearly, and staying calm while working through complex problems.
+                  I enjoy turning raw data into meaningful insights, simplifying complex information, and helping teams make informed decisions.
                 </p>
               </div>
             </div>
@@ -1155,7 +1166,7 @@
       applyTheme();
 
       // Typing effect
-      const words = ['Web Developer', 'Problem Solver', 'Creative Learner'];
+      const words = ['Data Analyst', 'Insight Explorer', 'Problem Solver'];
       const typingEl = document.getElementById('typingText');
       let wordIndex = 0;
       let charIndex = 0;
@@ -1241,7 +1252,12 @@
       };
 
       downloadResumeMenu?.addEventListener('click', () => {
-        window.location.href = 'r.pdf';
+        const link = document.createElement('a');
+        link.href = 'my%20res.pdf';
+        link.download = 'my-resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
         closeMenu();
       });
 
